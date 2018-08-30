@@ -1,1 +1,1 @@
-# m-qr.github.io
+# McDonald QRCode
