@@ -18,13 +18,7 @@
     <link rel="icon" 
       type="image/png" 
       href="https://png.icons8.com/color/1600/mcdonalds.png">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-8195583827405963",
-    enable_page_level_ads: true
-  });
-</script>
+	
 	<style>
 	.collapsible{
 		margin:0px!important;
@@ -57,6 +51,7 @@
 		flex-grow: 1;
 		flex-basis: 0;
 		margin:0px!important;
+		max-width:500px;
 		min-width:300px;
         font-size:1.33em!important;
 	}
@@ -21497,7 +21492,9 @@
                 item_body_message.appendChild(item_store_address);
 
                 var item_body_qrcode = document.createElement("img");
-                item_body_qrcode.setAttribute("src", "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+pad(store.id,10)+"000013&charset-source=ISO-8859-1");
+				
+                item_body_qrcode.setAttribute("src", "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl="+pad(store.id,10)+"000013&choe=UTF-8");
+                //item_body_qrcode.setAttribute("src", "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+pad(store.id,10)+"000013&charset-source=ISO-8859-1");
                 item_body_qrcode.setAttribute("height", "250");
                 item_body_qrcode.setAttribute("width", "250");
                 item_body_qrcode.setAttribute("alt", "QR Code");
